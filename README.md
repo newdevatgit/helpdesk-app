@@ -14,6 +14,11 @@ A full-featured Helpdesk Ticket Management System built with **React** and **Tai
 - ❗ No backend implemented yet (planned in future)
 
 ---
+### Login Credentials
+- 👤 Admin: `admin`
+- 👤 Operational Team: `otuser`
+- 👤 Technical Support: `techuser`
+- 👤 Regular User: any username
 
 ## 🚀 Live Demo
 
