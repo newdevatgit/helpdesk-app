@@ -6,18 +6,21 @@ const SignIn = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSignIn = () => {
-    const storedUser = JSON.parse(localStorage.getItem('user'));
+  const handleSignIn = (e) => {
+    e.preventDefault();
 
-    if (
-      storedUser &&
-      storedUser.username === username &&
-      storedUser.password === password
-    ) {
-      localStorage.setItem('isLoggedIn', 'true');
-      navigate('/');
+    let role = 'user';
+    if (username === 'otuser') {
+      role = 'ot';
+    }
+    localStorage.setItem('role', role);
+    localStorage.setItem('isLoggedIn', 'true');
+
+    // Redirect based on role
+    if (role === 'ot') {
+      navigate('/ot-dashboard');
     } else {
-      alert('Invalid username or password');
+      navigate('/');
     }
   };
 
@@ -25,26 +28,28 @@ const SignIn = () => {
     <div className="flex justify-center items-center min-h-screen bg-teal-300">
       <div className="bg-white p-8 rounded shadow-md w-[300px] text-center">
         <h2 className="text-xl font-semibold mb-4">Helpdesk System</h2>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          className="w-full p-2 mb-3 border"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 mb-4 border"
-        />
-        <button
-          onClick={handleSignIn}
-          className="bg-green-600 text-white px-4 py-2 rounded w-full"
-        >
-          Sign In
-        </button>
+        <form onSubmit={handleSignIn}>
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="w-full p-2 mb-3 border"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full p-2 mb-4 border"
+          />
+          <button
+            type="submit"
+            className="bg-green-600 text-white px-4 py-2 rounded w-full"
+          >
+            Sign In
+          </button>
+        </form>
         <div className="flex justify-between mt-4 text-sm">
           <span className="text-red-500">Forgot password</span>
           <Link to="/signup" className="text-blue-600 hover:underline">

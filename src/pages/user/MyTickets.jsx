@@ -10,9 +10,9 @@ const tickets = [
 ];
 
 const statusColors = {
-  'In Progress': 'bg-green-500',
-  'On hold': 'bg-yellow-500',
-  'Closed': 'bg-gray-700',
+  'In Progress': 'bg-green-800',
+  'On hold': 'bg-blue-800',
+  'Closed': 'bg-gray-800',
 };
 
 const StarRating = ({ count }) => {
@@ -27,11 +27,11 @@ const StarRating = ({ count }) => {
 
 const MyTickets = () => {
   return (
-    <div className="p-6">
+    <div className="p-2 ">
       <h2 className="text-2xl font-semibold text-center mb-6">List of Ticket</h2>
       <div className="flex items-center gap-4 mb-4">
-        <input type="text" placeholder="Find ticket" className="border rounded px-3 py-1" />
-        <select className="border rounded px-2 py-1">
+        <input type="text" placeholder="Find ticket" className="bg-gray-200 border rounded px-3 py-1" />
+        <select className="bg-gray-200 border rounded px-2 py-1">
           <option value="10">Show: 10</option>
           <option value="25">Show: 25</option>
         </select>
@@ -47,7 +47,7 @@ const MyTickets = () => {
             <th className="px-4 py-2">Rate</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='bg-gray-200'>
           {tickets.map((ticket) => (
             <tr key={ticket.id} className="border-t border-gray-200">
               <td className="px-4 py-2 text-blue-600 underline cursor-pointer">{ticket.id}</td>
