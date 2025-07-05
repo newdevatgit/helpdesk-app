@@ -4,6 +4,17 @@ A full-featured Helpdesk Ticket Management System built with **React** and **Tai
 
 ---
 
+## 🚀 Current Features
+
+- ✅ **User Login** (use any username)
+- ✅ **Technical Support Login** (use `techuser` as username)
+- ✅ **Operational Team Login** (use `otuser` as username)
+- ✅ **Admin Login** (use `admin` as username)
+- 🔐 Role-based UI rendering
+- ❗ No backend implemented yet (planned in future)
+
+---
+
 ## 🔐 Sign In Flow
 
 - All users must sign in to access any functionality.
@@ -56,10 +67,14 @@ A full-featured Helpdesk Ticket Management System built with **React** and **Tai
 
 ## 🔧 Technologies Used
 
-- **Frontend**: React, Tailwind CSS, React Router DOM, React Icons
-- **State Management**: useState, localStorage, (Redux optional)
-- **Form Handling**: react-hook-form (for ticket submission)
-- **Auth Simulation**: Basic localStorage login state
+- **React**
+- **Tailwind CSS**
+- **React Router DOM**
+- **React Icons**
+- **react-hook-form** (for forms)
+- **localStorage** (for session simulation)
+
+> 📌 Note: No backend/API is currently implemented — to be added in future versions.
 
 ---
 
@@ -88,16 +103,16 @@ npm run dev
 
 ## 🔐 Protected Routes
 
-| Route           | Access Role      | Description                        |
-|----------------|------------------|------------------------------------|
-| `/signin`       | Public           | Sign in to the platform            |
-| `/signup`       | Public           | Create a new user account          |
-| `/`             | All Auth Users   | Dashboard overview                 |
-| `/new-ticket`   | End User         | Submit new support request         |
-| `/my-tickets`   | End User         | View user-submitted tickets        |
-| `/assigned`     | Technical Team   | View assigned tickets              |
-| `/manage-tickets`| Operation/Admin | Assign and track all tickets       |
-| `/admin`        | Admin Only       | Manage users and analytics         |
+| Route            | Access Role       | Description                         |
+|------------------|-------------------|-------------------------------------|
+| `/signin`        | Public            | Sign in to the platform             |
+| `/signup`        | Public            | Create a new user account           |
+| `/`              | All Auth Users    | Dashboard overview                  |
+| `/new-ticket`    | End User          | Submit new support request          |
+| `/my-tickets`    | All Users         | View personal or team tickets       |
+| `/assigned`      | Technical Team    | View assigned tickets               |
+| `/manage-tickets`| Operation/Admin   | Assign and track all tickets        |
+| `/admin`         | Admin Only        | Manage users and analytics          |
 
 ---
 
@@ -138,7 +153,7 @@ src/
 ## ✍️ Author
 
 Made with ❤️ by **Arvind Singh**  
-📫 Connect on GitHub, LinkedIn, or Twitter for collaborations or suggestions.
+📫 Connect on GitHub or LinkedIn for collaborations or suggestions.
 
 ---
 

@@ -34,8 +34,8 @@ const SignIn = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-teal-300">
-      <div className="bg-teal-200 p-12 rounded shadow-md w-[500px] text-center">
-        <h2 className="text-2xl font-semibold italic mb-8">Helpdesk System</h2>
+      <div className="bg-[#EFEDED80] p-12 rounded-[10px] shadow-md w-[50vw] h-[70vh] text-center">
+        <h2 className="text-2xl font-bold mb-8">Helpdesk System</h2>
         <form onSubmit={handleSignIn} className="flex flex-col items-center gap-4">
           <input
             id="username"
@@ -57,13 +57,15 @@ const SignIn = () => {
           />
           <button
             type="submit"
-            className="bg-green-500 text-white px-10 py-2 rounded-full text-lg mt-2"
+            className="bg-green-500 text-white px-10 py-2 rounded-[10px] text-lg mt-2"
           >
             Sign In
           </button>
         </form>
         <div className="flex justify-between mt-6 text-sm w-[320px] mx-auto">
-          <span className="text-red-500">Forgot password</span>
+          <span className="text-red-500 cursor-pointer"
+          onClick={() => navigate('/forgot-password')}
+          >Forgot password</span>
           <Link to="/signup" className="text-black hover:underline">
             Sign Up
           </Link>

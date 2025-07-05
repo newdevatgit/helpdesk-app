@@ -46,11 +46,17 @@ function App() {
         <Route path="new-ticket" element={<NewTicket />} />
         <Route path="my-tickets" element={
           <PrivateRoute>
-            {localStorage.getItem('role') === 'ot' ? <OtMyTickets /> : <UserMyTickets />}
+            <UserMyTickets />
           </PrivateRoute>
         } />
         <Route path="user-profile" element={<UserProfile />} />
         <Route path="profile-settings" element={<ProfileSettings />} />
+
+        <Route path="ot-tickets" element={
+          <PrivateRoute requiredRole="ot">
+            <OtMyTickets />
+          </PrivateRoute>
+        } />
         <Route path="ot-dashboard" element={
           <PrivateRoute requiredRole="ot">
             <OTDashboard />

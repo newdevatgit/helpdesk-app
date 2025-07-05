@@ -16,7 +16,7 @@ const Performance = () => {
   };
 
   return (
-    <div className="p-6 flex gap-8">
+    <div className="p-6 flex justify-space justify-evenly items-start gap-8">
       {/* Main profile card */}
       <div className="bg-white rounded shadow p-6 w-[350px]">
         <div className="flex flex-col items-center mb-4">
@@ -26,12 +26,12 @@ const Performance = () => {
             </svg>
           </div>
           <div className="text-lg font-semibold">Operation Name</div>
-          <div className="bg-gray-100 rounded px-3 py-1 text-sm mt-2 w-full text-center">
+          <div className="bg-gray-200 rounded px-3 py-1 text-sm mt-2 w-full text-center">
             Contact No: 0123456789<br />
             Department: ABC
           </div>
         </div>
-        <div className="bg-gray-100 rounded p-4 mt-4">
+        <div className="bg-gray-200 rounded p-4 mt-4">
           <div className="font-semibold mb-2">Total Ticket Handle <span className="float-right">5</span></div>
           <div className="text-sm mb-1">Ticket Solved <span className="float-right">2</span></div>
           <div className="text-sm mb-1">Ticket Pending <span className="float-right">1</span></div>

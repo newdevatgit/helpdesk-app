@@ -19,8 +19,8 @@ const SignUp = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-teal-300">
-      <div className="bg-cyan-100 p-10 rounded shadow-md w-[400px] text-center">
-        <h1 className="text-2xl font-bold italic mb-2">Helpdesk System</h1>
+      <div className="bg-[#EFEDED80] p-10 rounded shadow-md w-[50vw] text-center">
+        <h1 className="text-2xl font-bold mb-2">Helpdesk System</h1>
         <p className="mb-6">Sign up here</p>
         <input
           type="text"
