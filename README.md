@@ -17,31 +17,31 @@ A full-featured Helpdesk Ticket Management System built with **React** and **Tai
 ## 📸 Screenshots
 
 ### 🔹 Sign up
-![Sign up](src\assets\sign-up.png)
+![Sign up](src/assets/sign-up.png)
 
 ### 🔹 User Dashboard
-![User Dashboard](src\assets\user-dashboard.png)
+![User Dashboard](src/assets/user-dashboard.png)
 
 ### 🔹 New ticket
-![New ticket](src\assets\new-ticket.png)
+![New ticket](src/assets/new-ticket.png)
 
 ### 🔹 User Profile
-![User Profile](src\assets\user-profile.png)
+![User Profile](src/assets/user-profile.png)
 
 ### 🔹 Admin dashboard
-![Admin dashboard](src\assets\Admin-dashboard.png)
+![Admin dashboard](src/assets/Admin-dashboard.png)
 
 ### 🔹 Admin setting
-![Admin setting](src\assets\Admin-setting.png)
+![Admin setting](src/assets/Admin-setting.png)
 
 ### 🔹 OT dashboard
-![OT dashboard](src\assets\ot-dashboard.png)
+![OT dashboard](src/assets/ot-dashboard.png)
 
 ### 🔹 OT ticket approval
-![OT ticket approval](src\assets\ot-ticket-approval.png)
+![OT ticket approval](src/assets/ot-ticket-approval.png)
 
 ### 🔹 Tech support
-![Tech support](src\assets\tech-support.png)
+![Tech support](src/assets/tech-support.png)
 
 ## 🔐 Sign In Flow
 
