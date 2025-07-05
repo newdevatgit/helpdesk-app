@@ -10,7 +10,7 @@ const summary = [
 
 const OTDashboard = () => (
   <div className="p-4">
-    <h2 className="text-2xl font-semibold mb-4">Dashboard</h2>
+    <h2 className="text-center text-2xl font-semibold mb-4">Operational Team Dashboard</h2>
     {/* Summary Cards */}
     <div className="grid grid-cols-4 gap-4 mb-6">
       {summary.map((item) => (
