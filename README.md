@@ -14,6 +14,13 @@ A full-featured Helpdesk Ticket Management System built with **React** and **Tai
 - ❗ No backend implemented yet (planned in future)
 
 ---
+
+## 🚀 Live Demo
+
+🔗 [Helpdesk Live Site on Netlify](https://helpdesk-web.netlify.app/)
+
+---
+
 ## 📸 Screenshots
 
 ### 🔹 Sign up
